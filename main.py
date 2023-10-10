@@ -8,6 +8,19 @@ import pandas as pd
 # import cvzone
 import threading
 
+# import ultralytics
+# Create a function to be called when the button is clicked
+
+# ultralytics.checks()
+
+coco_name="./coco.txt"
+
+
+def read_classes_from_file(file_path):
+    with open(file_path,"r") as file:
+        clases=[line.strip() for line in file]
+    return clases
+
 
 
 
